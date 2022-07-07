@@ -14,7 +14,7 @@ const config = defineConfig({
         collapsible: true,
         collapsed: true,
         items: [
-          { text: 'Item A', link: '/item-a' },
+          { text: 'Item A', link: '/' },
         ]
       },
       {
@@ -30,7 +30,7 @@ const config = defineConfig({
       // on `/config/` path.
       {
         text: 'Guide',
-        link: '/guide',
+        link: '/about/',
         activeMatch: '/config/'
       }
     ],
