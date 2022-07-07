@@ -2,10 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   sass: ^1.53.0
+  unoverlay-vue: 0.1.1
   vitepress: 1.0.0-alpha.4
   vue: ^3.2.37
 
 dependencies:
+  unoverlay-vue: registry.npmjs.org/unoverlay-vue/0.1.1_vue@3.2.37
   vitepress: registry.npmjs.org/vitepress/1.0.0-alpha.4_sass@1.53.0
   vue: registry.npmjs.org/vue/3.2.37
 
@@ -480,6 +482,13 @@ packages:
     version: 2.6.20
     dev: false
 
+  registry.npmjs.org/delay/5.0.0:
+    resolution: {integrity: sha512-ReEBKkIfe4ya47wlPYf/gu5ib6yUG0/Aez0JQZQz94kiWtRQvZIQbTiehsnwHvLSWJnQdhVeqYue7Id1dKr0qw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/delay/-/delay-5.0.0.tgz}
+    name: delay
+    version: 5.0.0
+    engines: {node: '>=10'}
+    dev: false
+
   registry.npmjs.org/esbuild-android-64/0.14.48:
     resolution: {integrity: sha512-3aMjboap/kqwCUpGWIjsk20TtxVoKck8/4Tu19rubh7t5Ra0Yrpg30Mt1QXXlipOazrEceGeWurXKeFJgkPOUg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/esbuild-android-64/-/esbuild-android-64-0.14.48.tgz}
     name: esbuild-android-64
@@ -823,6 +832,12 @@ packages:
     version: 3.0.0
     dev: false
 
+  registry.npmjs.org/lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz}
+    name: lodash
+    version: 4.17.21
+    dev: false
+
   registry.npmjs.org/magic-string/0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/magic-string/-/magic-string-0.25.9.tgz}
     name: magic-string
@@ -970,6 +985,25 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: registry.npmjs.org/is-number/7.0.0
+
+  registry.npmjs.org/unoverlay-vue/0.1.1_vue@3.2.37:
+    resolution: {integrity: sha512-kl6PAcN3SSKDeVE5VkcKSXGW6AoQsgTgvURaF1BcUCD4xtOlXL8rtNmQaKSYq2mfSC8bKtHEd/a+YJy9JF1J9A==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/unoverlay-vue/-/unoverlay-vue-0.1.1.tgz}
+    id: registry.npmjs.org/unoverlay-vue/0.1.1
+    name: unoverlay-vue
+    version: 0.1.1
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^2.0.0 || >=3.0.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      '@vueuse/core': registry.npmjs.org/@vueuse/core/8.7.5_vue@3.2.37
+      delay: registry.npmjs.org/delay/5.0.0
+      lodash: registry.npmjs.org/lodash/4.17.21
+      vue: registry.npmjs.org/vue/3.2.37
+      vue-demi: registry.npmjs.org/vue-demi/0.13.2_vue@3.2.37
+    dev: false
 
   registry.npmjs.org/vite/2.9.13_sass@1.53.0:
     resolution: {integrity: sha512-AsOBAaT0AD7Mhe8DuK+/kE4aWYFMx/i0ZNi98hJclxb4e0OhQcZYUrvLjIaQ8e59Ui7txcvKMiJC1yftqpQoDw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/vite/-/vite-2.9.13.tgz}
