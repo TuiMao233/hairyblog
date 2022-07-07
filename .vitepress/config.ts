@@ -1,4 +1,14 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, DefaultTheme } from 'vitepress'
+import path from 'path'
+
+const nav: DefaultTheme.NavItem[] = [
+  // This link gets active state when the user is
+  // on `/config/` path.
+  {
+    text: '首页',
+    link: '/'
+  }
+]
 
 const config = defineConfig({
   title: `Mr.Mao's blog`,
@@ -25,18 +35,15 @@ const config = defineConfig({
         ]
       }
     ],
-    nav: [
-      // This link gets active state when the user is
-      // on `/config/` path.
-      {
-        text: 'Guide',
-        link: '/about/',
-        activeMatch: '/config/'
-      }
-    ],
+    nav,
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2019-present Evan You'
+    }
+  },
+  vite: {
+    alias: {
+      '~': path.resolve('../theme-default')
     }
   }
 })

@@ -1,8 +1,7 @@
 import { useRouter } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { watch } from 'vue'
-import MyLayout from './Layout.vue'
-
+import MyLayout from '../theme-default/Layout.vue'
 
 import { show, hide } from "./components/loading"
 

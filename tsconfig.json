@@ -12,6 +12,11 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
+    "paths": {
+      "~/*": [
+        "theme-default/*"
+      ]
+    },
     "skipLibCheck": true
   },
   "include": [
