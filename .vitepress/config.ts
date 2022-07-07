@@ -42,8 +42,10 @@ const config = defineConfig({
     }
   },
   vite: {
-    alias: {
-      '~': path.resolve('../theme-default')
+    resolve:{
+      alias: {
+        '~': path.resolve(__dirname, '../theme-default')
+      }
     }
   }
 })

@@ -1,16 +1,11 @@
 import { useRouter } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { watch } from 'vue'
-import MyLayout from '../theme-default/Layout.vue'
+import Layout from './Layout.vue'
 
-import { show, hide } from "./components/loading"
-
+import "./components/loading"
 import "./style/font-face.scss"
 import "./style/vars.scss"
-
-show()
-
-window.addEventListener('load', hide)
 
 export default {
   ...DefaultTheme,
@@ -18,5 +13,5 @@ export default {
   },
   // override the Layout with a wrapper component that
   // injects the slots
-  Layout: MyLayout
+  Layout: Layout
 }

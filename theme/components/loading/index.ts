@@ -25,3 +25,10 @@ export function hide() {
   el.style.opacity = '0'
   setTimeout(() => el.remove(), 500)
 }
+
+
+show()
+
+// window.addEventListener('load', hide)
+
+setTimeout(hide, 4000)
