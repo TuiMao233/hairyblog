@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { provide } from 'vue'
-import { useNav } from '~/composables/nav'
-import { useSidebar } from '~/composables/sidebar'
-import VPNavScreen from '~/components/VPNavScreen.vue'
+import { useSidebar } from '@theme-reco/default/composables/sidebar'
+import { useNav } from '@theme-reco/default/composables/nav'
+import VPNavScreen from '@theme-reco/default/components/VPNavScreen.vue'
 // custom
 import HYNavBar from './HYNavBar.vue'
 

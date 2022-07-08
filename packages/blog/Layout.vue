@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { provide } from 'vue'
-import { useSidebar, useCloseSidebarOnEscape } from '~/composables/sidebar'
-import VPSkipLink from '~/components/VPSkipLink.vue'
-import VPBackdrop from '~/components/VPBackdrop.vue'
+import { useSidebar, useCloseSidebarOnEscape } from '@theme-reco/default/composables/sidebar'
+import VPSkipLink from '@theme-reco/default/components/VPSkipLink.vue'
+import VPBackdrop from '@theme-reco/default/components/VPBackdrop.vue'
 import HYNav from './components/HYNav.vue'
-import VPLocalNav from '~/components/VPLocalNav.vue'
-import VPSidebar from '~/components/VPSidebar.vue'
+import VPLocalNav from '@theme-reco/default/components/VPLocalNav.vue'
+import VPSidebar from '@theme-reco/default/components/VPSidebar.vue'
 import HYContent from './components/HYContent.vue'
-import VPFooter from '~/components/VPFooter.vue'
+import VPFooter from '@theme-reco/default/components/VPFooter.vue'
 
 import HYHomeHero from './components/HYHomeHero.vue';
 import HYHomeBody from './components/HYHomeBody.vue'

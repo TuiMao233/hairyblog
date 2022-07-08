@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import { useSidebar } from '~/composables/sidebar'
-import VPNavBarTitle from '~/components/VPNavBarTitle.vue'
-import VPNavBarSearch from '~/components/VPNavBarSearch.vue'
-import VPNavBarTranslations from '~/components/VPNavBarTranslations.vue'
-import VPNavBarAppearance from '~/components/VPNavBarAppearance.vue'
-import VPNavBarSocialLinks from '~/components/VPNavBarSocialLinks.vue'
-import VPNavBarExtra from '~/components/VPNavBarExtra.vue'
-import VPNavBarHamburger from '~/components/VPNavBarHamburger.vue'
+import { useSidebar } from '@theme-reco/default/composables/sidebar'
+import VPNavBarTitle from '@theme-reco/default/components/VPNavBarTitle.vue'
+import VPNavBarSearch from '@theme-reco/default/components/VPNavBarSearch.vue'
+import VPNavBarTranslations from '@theme-reco/default/components/VPNavBarTranslations.vue'
+import VPNavBarAppearance from '@theme-reco/default/components/VPNavBarAppearance.vue'
+import VPNavBarSocialLinks from '@theme-reco/default/components/VPNavBarSocialLinks.vue'
+import VPNavBarExtra from '@theme-reco/default/components/VPNavBarExtra.vue'
+import VPNavBarHamburger from '@theme-reco/default/components/VPNavBarHamburger.vue'
 
 // custom
 import HYNavBarMenu from './HYNavBarMenu.vue'

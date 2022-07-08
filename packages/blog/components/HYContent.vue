@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { useRoute, useData } from 'vitepress'
-import { useCopyCode } from '~/composables/copy-code'
-import { useSidebar } from '~/composables/sidebar'
-import NotFound from '~/NotFound.vue'
-import VPPage from '~/components/VPPage.vue'
-import VPHome from '~/components/VPHome.vue'
-import VPDoc from '~/components/VPDoc.vue'
+import { useCopyCode } from '@theme-reco/default/composables/copy-code'
+import { useSidebar } from '@theme-reco/default/composables/sidebar'
+import NotFound from '@theme-reco/default/NotFound.vue'
+import VPPage from '@theme-reco/default/components/VPPage.vue'
+import VPHome from '@theme-reco/default/components/VPHome.vue'
+import VPDoc from '@theme-reco/default/components/VPDoc.vue'
 
 const route = useRoute()
 const { frontmatter } = useData()

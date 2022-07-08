@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { HairyTheme } from '@/types'
 import { useData } from 'vitepress'
-import { isActive } from '~/support/utils'
-import VPLink from '~/components/VPLink.vue'
+import { isActive } from '@theme-reco/default/support/utils'
+import VPLink from '@theme-reco/default/components/VPLink.vue'
 import { isUrl } from '../support/utils'
 import HYNavBarIcon from './HYNavBarIcon.vue'
 defineProps<{

@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { useData } from 'vitepress'
 import type { DefaultTheme } from 'vitepress'
-import { isActive } from '~/support/utils'
-import VPFlyout from '~/components/VPFlyout.vue'
+import { isActive } from '@theme-reco/default/support/utils'
+import VPFlyout from '@theme-reco/default/components/VPFlyout.vue'
 
 defineProps<{
   item: DefaultTheme.NavItemWithChildren

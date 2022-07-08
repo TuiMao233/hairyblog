@@ -1,8 +1,5 @@
-import { useRouter } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import { watch } from 'vue'
 import Layout from './Layout.vue'
-
 import "./components/loading"
 import "./style/font-face.scss"
 import "./style/vars.scss"

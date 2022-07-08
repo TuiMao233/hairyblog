@@ -12,20 +12,12 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "paths": {
-      "~/*": [
-        "theme-default/*"
-      ],
-      "@/*": [
-        "theme/*"
-      ]
-    },
     "skipLibCheck": true
   },
   "include": [
     "**/*.ts",
     "**/*.d.ts",
     "**/*.tsx",
-    "**/*.vue",
+    "**/*.vue"
   ],
 }

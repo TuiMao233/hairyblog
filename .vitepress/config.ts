@@ -1,7 +1,6 @@
 import { defineConfigWithTheme } from 'vitepress'
-import { HairyTheme } from './theme'
+import { HairyTheme } from '@theme-reco/blog'
 import path from 'path'
-
 const nav: HairyTheme.NavItem[] = [
   // This link gets active state when the user is
   // on `/config/` path.
@@ -23,6 +22,14 @@ const nav: HairyTheme.NavItem[] = [
 ]
 
 const config = defineConfigWithTheme<HairyTheme.Config>({
+  vite: {
+    resolve: {
+      alias: {
+        '@theme-reco/blog': path.resolve(__dirname, '../packages/blog'),
+        '@theme-reco/default': path.resolve(__dirname, '../packages/default')
+      }
+    }
+  },
   title: `Mr.Mao's blog`,
   titleTemplate: 'Vite & Vue powered static site generator',
   description: 'For man is man and master of his fate.',
@@ -42,7 +49,7 @@ const config = defineConfigWithTheme<HairyTheme.Config>({
     },
     sidebar: [
       {
-        text: 'Section Title A',
+        text: '交叉学科',
         collapsible: true,
         collapsed: true,
         items: [
@@ -61,13 +68,6 @@ const config = defineConfigWithTheme<HairyTheme.Config>({
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2019-present Evan You'
-    }
-  },
-  vite: {
-    resolve: {
-      alias: {
-        '~': path.resolve(__dirname, '../theme-default')
-      }
     }
   }
 })
