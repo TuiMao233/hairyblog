@@ -7,10 +7,12 @@ const nav: HairyTheme.NavItem[] = [
   // on `/config/` path.
   {
     text: '首页',
+    icon: 'home',
     link: '/'
   },
   {
     text: '关于',
+    icon: 'user',
     link: '/about/'
   },
   {

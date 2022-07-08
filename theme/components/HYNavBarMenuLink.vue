@@ -3,8 +3,8 @@ import { HairyTheme } from '@/types'
 import { useData } from 'vitepress'
 import { isActive } from '~/support/utils'
 import VPLink from '~/components/VPLink.vue'
+import { isUrl } from '../support/utils'
 import HYNavBarIcon from './HYNavBarIcon.vue'
-
 defineProps<{
   item: HairyTheme.NavItemWithLink
 }>()
@@ -13,20 +13,17 @@ const { page } = useData()
 </script>
 
 <template>
-  <VPLink
-    :class="{
-      VPNavBarMenuLink: true,
-      active: isActive(
-        page.relativePath,
-        item.activeMatch || item.link,
-        !!item.activeMatch
-      )
-    }"
-    :href="item.link"
-    :noIcon="true"
-  >
+  <VPLink :class="{
+    VPNavBarMenuLink: true,
+    active: isActive(
+      page.relativePath,
+      item.activeMatch || item.link,
+      !!item.activeMatch
+    )
+  }" :href="item.link" :noIcon="true">
     <HYNavBarIcon class="VPNavBarMenuIcon" v-if="item.icon" :type="item.icon" />
     <span>{{ item.text }}</span>
+    <HYNavBarIcon class="VPNavBarMenuLinkIcon" v-if="isUrl(item.link)" type="link" />
   </VPLink>
 </template>
 
@@ -41,8 +38,16 @@ const { page } = useData()
   color: var(--vp-c-text-1);
   transition: color 0.25s;
 }
+
 .VPNavBarMenuIcon {
   margin-right: 8px;
+  font-size: 16px;
+}
+
+.VPNavBarMenuLinkIcon {
+  margin-left: 4px;
+  font-size: 12px;
+  color: rgba(000, 000, 000, 0.2);
 }
 
 .VPNavBarMenuLink.active {
