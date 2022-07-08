@@ -35,6 +35,11 @@ const config = defineConfigWithTheme<HairyTheme.Config>({
       apiKey: '756e8e048364fae43536c1d0000734a6',
       indexName: 'hairy.blog',
     },
+    user: {
+      name: 'Mr.Mao',
+      description: '没有特别意义',
+      avatar: 'https://tuimao233.gitee.io/mao-blog/avatar.png'
+    },
     sidebar: [
       {
         text: 'Section Title A',

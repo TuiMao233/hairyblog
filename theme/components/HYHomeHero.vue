@@ -19,7 +19,7 @@
 
   .name {
     font-family: MountainsofChristmas;
-    -webkit-text-fill-color: #8fe6d5;
+    -webkit-text-fill-color: #1aaa8d !important;
   }
 
   .tagline {
@@ -29,6 +29,7 @@
 
 
 .home-hero-background {
+  transform: rotateY(180deg);
   position: absolute;
   top: 0;
   left: 0;
