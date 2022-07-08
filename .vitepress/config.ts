@@ -7,6 +7,10 @@ const nav: DefaultTheme.NavItem[] = [
   {
     text: '首页',
     link: '/'
+  },
+  {
+    text: '关于',
+    link: '/about/'
   }
 ]
 
@@ -18,6 +22,11 @@ const config = defineConfig({
   srcDir: 'docs',
   lastUpdated: true,
   themeConfig: {
+    algolia: {
+      appId: '0B89DLR0Q9',
+      apiKey: '756e8e048364fae43536c1d0000734a6',
+      indexName: 'hairy.blog',
+    },
     sidebar: [
       {
         text: 'Section Title A',
