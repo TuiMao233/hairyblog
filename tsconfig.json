@@ -15,6 +15,9 @@
     "paths": {
       "~/*": [
         "theme-default/*"
+      ],
+      "@/*": [
+        "theme/*"
       ]
     },
     "skipLibCheck": true

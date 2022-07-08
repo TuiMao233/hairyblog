@@ -15,3 +15,5 @@ export default {
   // injects the slots
   Layout: Layout
 }
+
+export * from './types'

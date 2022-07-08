@@ -3,7 +3,7 @@ import { provide } from 'vue'
 import { useSidebar, useCloseSidebarOnEscape } from '~/composables/sidebar'
 import VPSkipLink from '~/components/VPSkipLink.vue'
 import VPBackdrop from '~/components/VPBackdrop.vue'
-import VPNav from '~/components/VPNav.vue'
+import HYNav from './components/HYNav.vue'
 import VPLocalNav from '~/components/VPLocalNav.vue'
 import VPSidebar from '~/components/VPSidebar.vue'
 import VPContent from '~/components/VPContent.vue'
@@ -27,7 +27,7 @@ provide('close-sidebar', closeSidebar)
     <slot name="layout-top" />
     <VPSkipLink />
     <VPBackdrop class="backdrop" :show="isSidebarOpen" @click="closeSidebar" />
-    <VPNav />
+    <HYNav />
     <VPLocalNav :open="isSidebarOpen" @open-menu="openSidebar" />
     <VPSidebar :open="isSidebarOpen" />
 

@@ -1,7 +1,8 @@
-import { defineConfig, DefaultTheme } from 'vitepress'
+import { defineConfigWithTheme } from 'vitepress'
+import { HairyTheme } from './theme'
 import path from 'path'
 
-const nav: DefaultTheme.NavItem[] = [
+const nav: HairyTheme.NavItem[] = [
   // This link gets active state when the user is
   // on `/config/` path.
   {
@@ -11,10 +12,15 @@ const nav: DefaultTheme.NavItem[] = [
   {
     text: '关于',
     link: '/about/'
+  },
+  {
+    text: 'github',
+    icon: 'github',
+    link: 'https://github.com/TuiMao233'
   }
 ]
 
-const config = defineConfig({
+const config = defineConfigWithTheme<HairyTheme.Config>({
   title: `Mr.Mao's blog`,
   titleTemplate: 'Vite & Vue powered static site generator',
   description: 'For man is man and master of his fate.',
@@ -51,7 +57,7 @@ const config = defineConfig({
     }
   },
   vite: {
-    resolve:{
+    resolve: {
       alias: {
         '~': path.resolve(__dirname, '../theme-default')
       }
