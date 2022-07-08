@@ -40,7 +40,7 @@ const { page } = useData()
 }
 
 .VPNavBarMenuIcon {
-  margin-right: 8px;
+  margin-right: 4px;
   font-size: 16px;
 }
 

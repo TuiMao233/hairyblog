@@ -4,7 +4,11 @@
 <style lang="scss">
 .VPHome {
   position: relative;
-
+}
+@media (min-width: 1440px) {
+  .VPHome {
+    padding-bottom: 15vh !important;
+  }
 }
 
 .VPHero.VPHomeHero {

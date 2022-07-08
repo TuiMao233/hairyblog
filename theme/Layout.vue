@@ -6,10 +6,11 @@ import VPBackdrop from '~/components/VPBackdrop.vue'
 import HYNav from './components/HYNav.vue'
 import VPLocalNav from '~/components/VPLocalNav.vue'
 import VPSidebar from '~/components/VPSidebar.vue'
-import VPContent from '~/components/VPContent.vue'
+import HYContent from './components/HYContent.vue'
 import VPFooter from '~/components/VPFooter.vue'
 
 import HYHomeHero from './components/HYHomeHero.vue';
+import HYHomeBody from './components/HYHomeBody.vue'
 
 const {
   isOpen: isSidebarOpen,
@@ -31,9 +32,12 @@ provide('close-sidebar', closeSidebar)
     <VPLocalNav :open="isSidebarOpen" @open-menu="openSidebar" />
     <VPSidebar :open="isSidebarOpen" />
 
-    <VPContent>
+    <HYContent>
       <template #home-hero-before>
         <HYHomeHero />
+      </template>
+      <template #home-body>
+        <HYHomeBody />
       </template>
       <template #home-hero-after><slot name="home-hero-after" /></template>
       <template #home-features-before><slot name="home-features-before" /></template>
@@ -48,8 +52,7 @@ provide('close-sidebar', closeSidebar)
       <template #aside-outline-after><slot name="aside-outline-after" /></template>
       <template #aside-ads-before><slot name="aside-ads-before" /></template>
       <template #aside-ads-after><slot name="aside-ads-after" /></template>
-    </VPContent>
-
+    </HYContent>
     <VPFooter />
     <slot name="layout-bottom" />
   </div>
